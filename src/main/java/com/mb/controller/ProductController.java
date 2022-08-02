@@ -5,6 +5,7 @@ import static com.mb.constant.UrlMapping.PRODUCT;
 import static com.mb.constant.UrlMapping.PRODUCTS;
 import static com.mb.constant.UrlMapping.SINGLE_PRODUCT;
 import java.util.List;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.mb.dto.ProductDto;
 import com.mb.entity.Product;
 import com.mb.service.ProductService;
 
@@ -27,9 +29,9 @@ public class ProductController
 	private ProductService productService;
 
 	@PostMapping(PRODUCT)
-	public Product saveProduct(@RequestBody Product productmodel)
+	public Product saveProduct(@RequestBody @Valid ProductDto productDto)
 	{
-		return productService.saveProduct(productmodel);
+		return productService.saveProduct(productDto);
 	}
 
 	@GetMapping(PRODUCTS)

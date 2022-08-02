@@ -15,41 +15,29 @@ public class Image
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@Column(name = "url1")
-	private String url1;
+	@Column(name = "url")
+	private String url;
 
-	@Column(name = "url2")
-	private String url2;
+	public Image(long id, String url)
+	{
+		super();
+		this.id = id;
+		this.url = url;
+	}
 
-	@Column(name = "url3")
-	private String url3;
+	public Image()
+	{
 
-	@Column(name = "url4")
-	private String url4;
+	}
 
 	public long getId()
 	{
 		return id;
 	}
 
-	public String getUrl1()
+	public String getUrl()
 	{
-		return url1;
-	}
-
-	public String getUrl2()
-	{
-		return url2;
-	}
-
-	public String getUrl3()
-	{
-		return url3;
-	}
-
-	public String getUrl4()
-	{
-		return url4;
+		return url;
 	}
 
 	public void setId(long id)
@@ -57,24 +45,9 @@ public class Image
 		this.id = id;
 	}
 
-	public void setUrl1(String url1)
+	public void setUrl(String url)
 	{
-		this.url1 = url1;
-	}
-
-	public void setUrl2(String url2)
-	{
-		this.url2 = url2;
-	}
-
-	public void setUrl3(String url3)
-	{
-		this.url3 = url3;
-	}
-
-	public void setUrl4(String url4)
-	{
-		this.url4 = url4;
+		this.url = url;
 	}
 
 }

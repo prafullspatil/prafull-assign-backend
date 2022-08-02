@@ -39,6 +39,9 @@ public class PaymentDetails
 	@Column(name = "currency")
 	private String currency;
 
+	@Column(name = "status")
+	private String status;
+
 	public long getId()
 	{
 		return id;
@@ -127,6 +130,16 @@ public class PaymentDetails
 	public void setCurrency(String currency)
 	{
 		this.currency = currency;
+	}
+
+	public String getStatus()
+	{
+		return status;
+	}
+
+	public void setStatus(String status)
+	{
+		this.status = status;
 	}
 
 }

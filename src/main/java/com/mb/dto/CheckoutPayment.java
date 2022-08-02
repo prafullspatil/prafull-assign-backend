@@ -1,16 +1,26 @@
 package com.mb.dto;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class CheckoutPayment
 {
-
-	// the product name
+	@NotBlank
 	private String name;
-	// currency like usd, eur ...
+
+	@NotBlank
 	private String currency;
-	// our success and cancel url stripe will redirect to this links
+
+	@NotBlank
 	private String successUrl;
+
+	@NotBlank
 	private String cancelUrl;
+
+	@NotNull
 	private long amount;
+
+	@NotNull
 	private long quantity;
 
 	public String getName()

@@ -20,11 +20,11 @@ public class Product extends Auditable
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private long id;
 
-	@Column(name = "product_name")
-	private String productName;
+	@Column(name = "name")
+	private String name;
 
-	@Column(name = "product_message")
-	private String productMessage;
+	@Column(name = "message")
+	private String message;
 
 	@Column(columnDefinition = "TEXT", name = "description")
 	private String description;
@@ -39,22 +39,22 @@ public class Product extends Auditable
 	@JoinColumn(name = "p_fk", referencedColumnName = "id")
 	private List<Image> images;
 
-	@Column(name = "product_code")
-	private String productCode;
+	@Column(name = "code")
+	private String code;
 
 	public long getId()
 	{
 		return id;
 	}
 
-	public String getProductName()
+	public String getName()
 	{
-		return productName;
+		return name;
 	}
 
-	public String getProductMessage()
+	public String getMessage()
 	{
-		return productMessage;
+		return message;
 	}
 
 	public String getDescription()
@@ -77,19 +77,24 @@ public class Product extends Auditable
 		return images;
 	}
 
+	public String getCode()
+	{
+		return code;
+	}
+
 	public void setId(long id)
 	{
 		this.id = id;
 	}
 
-	public void setProductName(String productName)
+	public void setName(String name)
 	{
-		this.productName = productName;
+		this.name = name;
 	}
 
-	public void setProductMessage(String productMessage)
+	public void setMessage(String message)
 	{
-		this.productMessage = productMessage;
+		this.message = message;
 	}
 
 	public void setDescription(String description)
@@ -112,14 +117,9 @@ public class Product extends Auditable
 		this.images = images;
 	}
 
-	public String getProductCode()
+	public void setCode(String code)
 	{
-		return productCode;
-	}
-
-	public void setProductCode(String productCode)
-	{
-		this.productCode = productCode;
+		this.code = code;
 	}
 
 }

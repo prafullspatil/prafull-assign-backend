@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.gson.Gson;
 import com.mb.dto.CheckoutPayment;
 import com.mb.entity.PaymentDetails;
-import com.mb.exception.CustomException;
 import com.mb.repository.PaymentDetailsRepository;
-import com.mb.response.SuccResponse;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
@@ -82,7 +80,7 @@ public class StripeController
 	}
 
 	@PostMapping(WEBHOOK)
-	private ResponseEntity<SuccResponse> savePaymentDetails(HttpServletRequest request, PaymentDetails paymentDetails)
+	private ResponseEntity<?> savePaymentDetails(HttpServletRequest request, PaymentDetails paymentDetails)
 	{
 		String sigHeader = request.getHeader(STRIPE_HEADER);
 		Event event = null;
@@ -115,18 +113,11 @@ public class StripeController
 			details.setCustomerCountry(charge.getBillingDetails().getAddress().getCountry());
 			details.setAmount(charge.getAmount());
 			details.setCurrency(charge.getCurrency());
+			details.setStatus(charge.getStatus());
 			paymentDetailsRepository.save(details);
 
-			SuccResponse response = SuccResponse.getInstance();
-			response.setData(paymentDetailsRepository.save(details));
-			response.setMessage("Success");
-			response.setStatusCode(HttpStatus.OK.value());
-			return new ResponseEntity<SuccResponse>(response, HttpStatus.OK);
 		}
-		else
-		{
-			throw new CustomException("Error");
-		}
+		return new ResponseEntity<>(event, HttpStatus.OK);
 
 	}
 
