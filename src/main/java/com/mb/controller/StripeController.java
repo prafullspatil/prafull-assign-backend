@@ -1,7 +1,7 @@
 package com.mb.controller;
 
+import static com.mb.constant.StripKey.STRIPE_HEADER;
 import static com.mb.constant.StripKey.STRIPE_KEY;
-import static com.mb.constant.StripKey.WEBHOOK_SECRET;
 import static com.mb.constant.UrlMapping.BASE_URL;
 import static com.mb.constant.UrlMapping.CHECKOUT;
 import static com.mb.constant.UrlMapping.WEBHOOK;
@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,10 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.gson.Gson;
 import com.mb.dto.CheckoutPayment;
 import com.mb.entity.PaymentDetails;
+import com.mb.exception.CustomException;
 import com.mb.repository.PaymentDetailsRepository;
+import com.mb.response.SuccResponse;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
-import com.stripe.model.Customer;
+import com.stripe.model.Charge;
 import com.stripe.model.Event;
 import com.stripe.model.EventDataObjectDeserializer;
 import com.stripe.model.StripeObject;
@@ -36,22 +37,17 @@ import com.stripe.param.checkout.SessionCreateParams;
 @RequestMapping(BASE_URL)
 public class StripeController
 {
+	@Autowired
+	private PaymentDetailsRepository paymentDetailsRepository;
 
-	private static final StripeObject Customer = null;
+	private static final String WEBHOOK_SECRET = "whsec_d881ff823bc3b4ca956673470879e9db280aea7ba51ee78ae1234766298cfee1";
+
+	private static Gson gson = new Gson();
 
 	private static void init()
 	{
 		Stripe.apiKey = STRIPE_KEY;
 	}
-
-	@Autowired
-	private ModelMapper modelMapper;
-
-	@Autowired
-	private PaymentDetailsRepository paymentDetailsRepository;
-
-	// create a Gson object
-	private static Gson gson = new Gson();
 
 	@CrossOrigin(origins = "http://localhost:4200")
 	@PostMapping(CHECKOUT)
@@ -81,24 +77,15 @@ public class StripeController
 
 		Session session = Session.create(params);
 		Map<String, String> responseData = new HashMap<>();
-
 		responseData.put("id", session.getId());
-		// // We can return only the sessionId as a String
-		// Map<String, Object> customerinfo = new HashMap<>();
-		// customerinfo.put(
-		// "description",
-		// "My First Test Customer (created for API docs at https://www.stripe.com/docs/api)");
-		//
-		// Customer customer = ((com.stripe.model.Customer) Customer).create(customerinfo);
 		return gson.toJson(responseData);
 	}
 
 	@PostMapping(WEBHOOK)
-	private ResponseEntity<?> extractEventFromSignature(HttpServletRequest request, PaymentDetails paymentDetails)
+	private ResponseEntity<SuccResponse> savePaymentDetails(HttpServletRequest request, PaymentDetails paymentDetails)
 	{
-		String sigHeader = request.getHeader("Stripe-Signature");
+		String sigHeader = request.getHeader(STRIPE_HEADER);
 		Event event = null;
-
 		try
 		{
 			String payload = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
@@ -109,46 +96,38 @@ public class StripeController
 
 		}
 
-		if ("checkout.session.completed".equals(event.getType()))
+		if ("charge.succeeded".equals(event.getType()))
 		{
 			System.out.println("In Checkout Session completed");
 			PaymentDetails details = new PaymentDetails();
-			// details.setType(event.getType());
-			// System.out.println("getRawJsonObject" + event.getData().getObject().getRawJsonObject());
-			// // String json = event.getData().toJson();
-			// // System.out.println("json:" + json);
-			// event.getId();
-			// System.out.println("event:" + event);
 			EventDataObjectDeserializer dataObjectDeserializer = event.getDataObjectDeserializer();
 			StripeObject stripeObject = null;
 			if (dataObjectDeserializer.getObject().isPresent())
 			{
 				stripeObject = dataObjectDeserializer.getObject().get();
 			}
-			Customer customer = modelMapper.map(stripeObject, Customer.class);
-
-			// System.out.println("Strip Object" + stripeObject);
-			// details.setEmail(((Customer) stripeObject).getEmail());
-			details.setEmail(customer.getEmail());
-			// details.setName(((Customer) customer).getName());
-			details.setName(customer.getName());
-			details.setType(event.getType());
+			Charge charge = (Charge) stripeObject;
+			details.setPaymentId(charge.getPaymentIntent());
+			details.setPaymentMethod(charge.getPaymentMethodDetails().getType());
+			details.setCustomerId(charge.getCustomer());
+			details.setCustomerEmail(charge.getBillingDetails().getEmail());
+			details.setCustomerName(charge.getBillingDetails().getName());
+			details.setCustomerCountry(charge.getBillingDetails().getAddress().getCountry());
+			details.setAmount(charge.getAmount());
+			details.setCurrency(charge.getCurrency());
 			paymentDetailsRepository.save(details);
-		}
-		// try
-		// {
-		// System.out.println("event JSON : => " + mapper.writeValueAsString(event));
-		// String type = event.getType();
-		//
-		//
-		//
-		// }
-		// catch (JsonProcessingException e)
-		// {
-		// e.printStackTrace();
-		// }
 
-		return new ResponseEntity<>(event, HttpStatus.OK);
+			SuccResponse response = SuccResponse.getInstance();
+			response.setData(paymentDetailsRepository.save(details));
+			response.setMessage("Success");
+			response.setStatusCode(HttpStatus.OK.value());
+			return new ResponseEntity<SuccResponse>(response, HttpStatus.OK);
+		}
+		else
+		{
+			throw new CustomException("Error");
+		}
+
 	}
 
 }

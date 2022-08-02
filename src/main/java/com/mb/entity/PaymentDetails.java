@@ -1,41 +1,87 @@
 package com.mb.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "payment")
 public class PaymentDetails
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private long id;
 
-	private String name;
+	@Column(name = "payment_id")
+	private String paymentId;
 
-	private String email;
+	@Column(name = "payment_method")
+	private String paymentMethod;
 
-	private String type;
+	@Column(name = "customer_id")
+	private String customerId;
+
+	@Column(name = "customer_name")
+	private String customerName;
+
+	@Column(name = "customer_email")
+	private String customerEmail;
+
+	@Column(name = "customer_country")
+	private String customerCountry;
+
+	@Column(name = "amount")
+	private Long amount;
+
+	@Column(name = "currency")
+	private String currency;
 
 	public long getId()
 	{
 		return id;
 	}
 
-	public String getName()
+	public String getPaymentId()
 	{
-		return name;
+		return paymentId;
 	}
 
-	public String getEmail()
+	public String getPaymentMethod()
 	{
-		return email;
+		return paymentMethod;
 	}
 
-	public String getType()
+	public String getCustomerId()
 	{
-		return type;
+		return customerId;
+	}
+
+	public String getCustomerName()
+	{
+		return customerName;
+	}
+
+	public String getCustomerEmail()
+	{
+		return customerEmail;
+	}
+
+	public String getCustomerCountry()
+	{
+		return customerCountry;
+	}
+
+	public Long getAmount()
+	{
+		return amount;
+	}
+
+	public String getCurrency()
+	{
+		return currency;
 	}
 
 	public void setId(long id)
@@ -43,19 +89,44 @@ public class PaymentDetails
 		this.id = id;
 	}
 
-	public void setName(String name)
+	public void setPaymentId(String paymentId)
 	{
-		this.name = name;
+		this.paymentId = paymentId;
 	}
 
-	public void setEmail(String email)
+	public void setPaymentMethod(String paymentMethod)
 	{
-		this.email = email;
+		this.paymentMethod = paymentMethod;
 	}
 
-	public void setType(String type)
+	public void setCustomerId(String customerId)
 	{
-		this.type = type;
+		this.customerId = customerId;
+	}
+
+	public void setCustomerName(String customerName)
+	{
+		this.customerName = customerName;
+	}
+
+	public void setCustomerEmail(String customerEmail)
+	{
+		this.customerEmail = customerEmail;
+	}
+
+	public void setCustomerCountry(String customerCountry)
+	{
+		this.customerCountry = customerCountry;
+	}
+
+	public void setAmount(Long amount)
+	{
+		this.amount = amount;
+	}
+
+	public void setCurrency(String currency)
+	{
+		this.currency = currency;
 	}
 
 }
