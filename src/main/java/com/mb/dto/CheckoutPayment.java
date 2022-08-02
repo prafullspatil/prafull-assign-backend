@@ -1,20 +1,20 @@
 package com.mb.dto;
 
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class CheckoutPayment
 {
-	@NotBlank
+	@NotEmpty
 	private String name;
 
-	@NotBlank
+	@NotEmpty
 	private String currency;
 
-	@NotBlank
+	@NotEmpty
 	private String successUrl;
 
-	@NotBlank
+	@NotEmpty
 	private String cancelUrl;
 
 	@NotNull

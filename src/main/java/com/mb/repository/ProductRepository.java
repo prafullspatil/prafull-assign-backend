@@ -8,4 +8,6 @@ import com.mb.entity.Product;
 public interface ProductRepository extends JpaRepository<Product, Long>
 {
 	Product findProductById(long id);
+
+	boolean findByCode(String code);
 }

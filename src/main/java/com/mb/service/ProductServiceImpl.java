@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.mb.dto.ProductDto;
 import com.mb.entity.Product;
+import com.mb.exception.CustomException;
 import com.mb.repository.ProductRepository;
 
 @Service
@@ -20,6 +21,10 @@ public class ProductServiceImpl implements ProductService
 	@Override
 	public Product saveProduct(ProductDto productDto)
 	{
+		if (productRepository.findByCode(productDto.getCode()))
+		{
+			throw new CustomException("Product already exist with code  " + productDto.getCode());
+		}
 		Product product = modelMapper.map(productDto, Product.class);
 		return productRepository.save(product);
 	}

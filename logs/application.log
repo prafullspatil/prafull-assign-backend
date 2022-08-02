@@ -1,0 +1,261 @@
+2022-08-02 21:22:40.526  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 13723 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:22:40.526  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:22:40.734  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:22:40.745  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:22:40.915  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:22:40.916  INFO 13723 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 21:22:40.917  INFO 13723 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 21:22:40.927  INFO 13723 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 21:22:40.927  INFO 13723 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 399 ms
+2022-08-02 21:22:41.002  INFO 13723 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:22:41.008  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-08-02 21:22:41.011  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-08-02 21:22:41.012  INFO 13723 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:22:41.097  INFO 13723 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:22:41.098  INFO 13723 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:22:41.567  WARN 13723 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:22:42.335  INFO 13723 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:22:42.351  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:22:42.357  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 1.876 seconds (JVM running for 124.897)
+2022-08-02 21:22:42.359  INFO 13723 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-08-02 21:23:41.859  INFO 13723 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:23:41.862  INFO 13723 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-08-02 21:23:41.866  INFO 13723 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-08-02 21:23:41.966  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 13723 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:23:41.966  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:23:42.137  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:23:42.147  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:23:42.313  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:23:42.314  INFO 13723 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 21:23:42.314  INFO 13723 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 21:23:42.328  INFO 13723 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 21:23:42.328  INFO 13723 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 359 ms
+2022-08-02 21:23:42.408  INFO 13723 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:23:42.412  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-08-02 21:23:42.416  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-08-02 21:23:42.417  INFO 13723 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:23:42.488  INFO 13723 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:23:42.488  INFO 13723 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:23:42.965  WARN 13723 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:23:43.590  INFO 13723 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:23:43.604  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:23:43.608  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 1.668 seconds (JVM running for 186.149)
+2022-08-02 21:23:43.610  INFO 13723 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-08-02 21:24:03.027  INFO 13723 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:24:03.028  INFO 13723 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-08-02 21:24:03.029  INFO 13723 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-08-02 21:24:03.110  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 13723 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:24:03.110  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:24:03.250  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:24:03.259  INFO 13723 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:24:03.393  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:24:03.394  INFO 13723 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 21:24:03.394  INFO 13723 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 21:24:03.400  INFO 13723 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 21:24:03.400  INFO 13723 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 289 ms
+2022-08-02 21:24:03.473  INFO 13723 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:24:03.477  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-08-02 21:24:03.479  INFO 13723 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-08-02 21:24:03.480  INFO 13723 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:24:03.561  INFO 13723 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:24:03.561  INFO 13723 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:24:04.061  WARN 13723 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:24:04.816  INFO 13723 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:24:04.831  INFO 13723 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:24:04.837  INFO 13723 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 1.752 seconds (JVM running for 207.377)
+2022-08-02 21:24:04.838  INFO 13723 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-08-02 21:24:06.985  INFO 13723 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-02 21:24:06.997  INFO 13723 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:24:06.999  INFO 13723 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-08-02 21:24:07.004  INFO 13723 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-08-02 21:24:08.997  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 14307 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:24:09.002  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:24:09.071  INFO 14307 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-02 21:24:09.073  INFO 14307 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-02 21:24:09.791  INFO 14307 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:24:09.842  INFO 14307 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:24:10.707  INFO 14307 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:24:10.716  INFO 14307 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 21:24:10.717  INFO 14307 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 21:24:10.780  INFO 14307 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 21:24:10.780  INFO 14307 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1706 ms
+2022-08-02 21:24:11.014  INFO 14307 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:24:11.052  INFO 14307 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-02 21:24:11.190  INFO 14307 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-02 21:24:11.281  INFO 14307 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-02 21:24:11.438  INFO 14307 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-02 21:24:11.449  INFO 14307 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:24:12.063  INFO 14307 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:24:12.070  INFO 14307 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:24:12.937  WARN 14307 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:24:14.040  INFO 14307 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:24:14.077  INFO 14307 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:24:14.089  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 5.527 seconds (JVM running for 6.492)
+2022-08-02 21:24:23.646  INFO 14307 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 21:24:23.647  INFO 14307 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-02 21:24:23.648  INFO 14307 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-02 21:24:23.772  INFO 14307 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type POST , Path /api/checkout-payment from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:24:23.773  INFO 14307 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.StripeController.paymentWithCheckoutPage(CheckoutPayment))
+2022-08-02 21:24:25.769  INFO 14307 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,{"id":"cs_test_a1n2M9F7iiEdR4cXhRsAGYK9qcMOhbkKrgduTbDBiwOGYglqlWTjBn6CKL"},[]>
+2022-08-02 21:24:25.770  INFO 14307 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.StripeController.paymentWithCheckoutPage(CheckoutPayment))
+2022-08-02 21:24:26.616  WARN 14307 --- [http-nio-9091-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:46.272  WARN 14307 --- [http-nio-9091-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:46.272  WARN 14307 --- [http-nio-9091-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:47.494  WARN 14307 --- [http-nio-9091-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:48.132  WARN 14307 --- [http-nio-9091-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:48.132  WARN 14307 --- [http-nio-9091-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:25:50.004  INFO 14307 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:25:50.005  INFO 14307 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:25:50.249  INFO 14307 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@7935bd89,[]>
+2022-08-02 21:25:50.249  INFO 14307 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:27:21.796  INFO 14307 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:27:21.801  INFO 14307 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-02 21:27:21.808  INFO 14307 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-02 21:27:21.912  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 14307 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:27:21.912  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:27:22.152  INFO 14307 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:27:22.162  INFO 14307 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:27:22.341  INFO 14307 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:27:22.351  INFO 14307 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
+2022-08-02 21:27:22.438  INFO 14307 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:27:22.443  INFO 14307 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-08-02 21:27:22.447  INFO 14307 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-08-02 21:27:22.448  INFO 14307 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:27:22.548  INFO 14307 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:27:22.548  INFO 14307 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:27:23.082  WARN 14307 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:27:23.912  INFO 14307 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:27:23.938  INFO 14307 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:27:23.944  INFO 14307 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 2.067 seconds (JVM running for 196.348)
+2022-08-02 21:27:23.947  INFO 14307 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-08-02 21:27:23.953  INFO 14307 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:27:23.954  INFO 14307 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-08-02 21:27:23.957  INFO 14307 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-08-02 21:27:25.585  INFO 14777 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Starting PrafullAssignBackendApplication using Java 17.0.2 on mindbowser with PID 14777 (/home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend/target/classes started by mindbowser in /home/mindbowser/Documents/workspace-spring-tool-suite-4-4.14.1.RELEASE/prafull-assign-backend)
+2022-08-02 21:27:25.587  INFO 14777 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-08-02 21:27:25.646  INFO 14777 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-02 21:27:25.646  INFO 14777 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-02 21:27:26.319  INFO 14777 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-02 21:27:26.364  INFO 14777 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2022-08-02 21:27:27.136  INFO 14777 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2022-08-02 21:27:27.144  INFO 14777 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-02 21:27:27.144  INFO 14777 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-02 21:27:27.194  INFO 14777 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-02 21:27:27.194  INFO 14777 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1547 ms
+2022-08-02 21:27:27.424  INFO 14777 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-02 21:27:27.456  INFO 14777 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-02 21:27:27.585  INFO 14777 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-02 21:27:27.661  INFO 14777 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-02 21:27:27.804  INFO 14777 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-02 21:27:27.815  INFO 14777 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-02 21:27:28.360  INFO 14777 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-02 21:27:28.366  INFO 14777 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-02 21:27:29.228  WARN 14777 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-02 21:27:30.359  INFO 14777 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-02 21:27:30.397  INFO 14777 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-02 21:27:30.408  INFO 14777 --- [restartedMain] com.mb.PrafullAssignBackendApplication   : Started PrafullAssignBackendApplication in 5.209 seconds (JVM running for 5.971)
+2022-08-02 21:27:55.940  INFO 14777 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 21:27:55.940  INFO 14777 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-02 21:27:55.941  INFO 14777 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-02 21:27:56.014  WARN 14777 --- [http-nio-9091-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:27:56.515  WARN 14777 --- [http-nio-9091-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "com.mb.service.PaymentDetailService.savePaymentDetails(javax.servlet.http.HttpServletRequest)" because "this.paymentDetailService" is null]
+2022-08-02 21:31:37.057  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:31:37.060  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:37.270  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@6a5f5d0b,[]>
+2022-08-02 21:31:37.271  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:44.908  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:31:44.908  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:44.912  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@4ce94740,[]>
+2022-08-02 21:31:44.912  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:58.843  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:31:58.844  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:58.847  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@7f1d5d89,[]>
+2022-08-02 21:31:58.847  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:59.728  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:31:59.729  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:31:59.734  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@45914852,[]>
+2022-08-02 21:31:59.735  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:05.100  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:05.100  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:05.104  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@4c46b21f,[]>
+2022-08-02 21:32:05.105  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:09.400  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:09.401  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:09.405  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@7b326f63,[]>
+2022-08-02 21:32:09.405  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:11.350  INFO 14777 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:11.351  INFO 14777 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:11.355  INFO 14777 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@4c055e9f,[]>
+2022-08-02 21:32:11.355  INFO 14777 --- [http-nio-9091-exec-10] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:12.186  INFO 14777 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:12.186  INFO 14777 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:12.191  INFO 14777 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@76d781ef,[]>
+2022-08-02 21:32:12.191  INFO 14777 --- [http-nio-9091-exec-1] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:15.943  INFO 14777 --- [http-nio-9091-exec-2] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:15.943  INFO 14777 --- [http-nio-9091-exec-2] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:15.946  INFO 14777 --- [http-nio-9091-exec-2] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@1cf158f1,[]>
+2022-08-02 21:32:15.947  INFO 14777 --- [http-nio-9091-exec-2] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:21.850  INFO 14777 --- [http-nio-9091-exec-3] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:21.851  INFO 14777 --- [http-nio-9091-exec-3] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:21.855  INFO 14777 --- [http-nio-9091-exec-3] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@7fbfe30a,[]>
+2022-08-02 21:32:21.855  INFO 14777 --- [http-nio-9091-exec-3] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:21.913  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:21.913  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:21.916  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@4ad81f4,[]>
+2022-08-02 21:32:21.917  INFO 14777 --- [http-nio-9091-exec-4] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:23.351  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:23.351  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:23.354  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@87d31b0,[]>
+2022-08-02 21:32:23.354  INFO 14777 --- [http-nio-9091-exec-5] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:32.518  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:32.518  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:32.520  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@39f82ef5,[]>
+2022-08-02 21:32:32.520  INFO 14777 --- [http-nio-9091-exec-6] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:57.729  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:32:57.729  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:32:57.732  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@2b2b17bf,[]>
+2022-08-02 21:32:57.733  INFO 14777 --- [http-nio-9091-exec-7] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:33:33.298  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:33:33.299  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:33:33.302  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@30efd840,[]>
+2022-08-02 21:33:33.304  INFO 14777 --- [http-nio-9091-exec-8] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:33:44.758  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : 
+
+Request Type GET , Path /api/get-product/1 from Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
+2022-08-02 21:33:44.758  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      :  Allowed execution for execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))
+2022-08-02 21:33:44.761  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : returned with value <200 OK OK,com.mb.entity.Product@209ec56f,[]>
+2022-08-02 21:33:44.762  INFO 14777 --- [http-nio-9091-exec-9] com.mb.aspect.CentralLoggingHandler      : after method execution(ResponseEntity com.mb.controller.ProductController.getProductById(long))

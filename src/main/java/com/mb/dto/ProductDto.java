@@ -1,7 +1,6 @@
 package com.mb.dto;
 
 import java.util.List;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import com.mb.entity.Image;
@@ -9,13 +8,13 @@ import com.mb.entity.Image;
 public class ProductDto
 {
 
-	@NotBlank
+	@NotEmpty
 	private String name;
 
-	@NotBlank
+	@NotEmpty
 	private String message;
 
-	@NotBlank
+	@NotEmpty
 	private String description;
 
 	@NotNull
@@ -27,7 +26,7 @@ public class ProductDto
 	@NotEmpty
 	private List<Image> images;
 
-	@NotBlank
+	@NotEmpty
 	private String code;
 
 	public String getName()
