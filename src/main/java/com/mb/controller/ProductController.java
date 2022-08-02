@@ -1,5 +1,9 @@
 package com.mb.controller;
 
+import static com.mb.constant.UrlMapping.BASE_URL;
+import static com.mb.constant.UrlMapping.PRODUCT;
+import static com.mb.constant.UrlMapping.PRODUCTS;
+import static com.mb.constant.UrlMapping.SINGLE_PRODUCT;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,27 +19,27 @@ import com.mb.entity.Product;
 import com.mb.service.ProductService;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping(BASE_URL)
 public class ProductController
 {
 
 	@Autowired
 	private ProductService productService;
 
-	@PostMapping("/save")
+	@PostMapping(PRODUCT)
 	public Product saveProduct(@RequestBody Product productmodel)
 	{
 		return productService.saveProduct(productmodel);
 	}
 
-	@GetMapping("/get-product")
+	@GetMapping(PRODUCTS)
 	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Product> getProduct()
 	{
 		return productService.getProduct();
 	}
 
-	@GetMapping("/get-product/{id}")
+	@GetMapping(SINGLE_PRODUCT)
 	@CrossOrigin(origins = "http://localhost:4200")
 	public ResponseEntity<?> getProductById(@PathVariable("id") long id)
 	{

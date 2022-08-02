@@ -1,6 +1,10 @@
 package com.mb.controller;
 
-import static com.mb.constant.StripKey.stripkey;
+import static com.mb.constant.StripKey.STRIPE_KEY;
+import static com.mb.constant.StripKey.WEBHOOK_SECRET;
+import static com.mb.constant.UrlMapping.BASE_URL;
+import static com.mb.constant.UrlMapping.CHECKOUT;
+import static com.mb.constant.UrlMapping.WEBHOOK;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -29,7 +33,7 @@ import com.stripe.net.Webhook;
 import com.stripe.param.checkout.SessionCreateParams;
 
 @RestController
-@RequestMapping(value = "/api")
+@RequestMapping(BASE_URL)
 public class StripeController
 {
 
@@ -37,7 +41,7 @@ public class StripeController
 
 	private static void init()
 	{
-		Stripe.apiKey = stripkey;
+		Stripe.apiKey = STRIPE_KEY;
 	}
 
 	@Autowired
@@ -49,16 +53,8 @@ public class StripeController
 	// create a Gson object
 	private static Gson gson = new Gson();
 
-	private static String webhookSecret = "whsec_d881ff823bc3b4ca956673470879e9db280aea7ba51ee78ae1234766298cfee1";
-
-	@PostMapping("/payment")
 	@CrossOrigin(origins = "http://localhost:4200")
-	/**
-	 * s
-	 * Payment with Stripe checkout page
-	 * 
-	 * @throws StripeException
-	 */
+	@PostMapping(CHECKOUT)
 	public String paymentWithCheckoutPage(@RequestBody CheckoutPayment payment) throws StripeException
 	{
 
@@ -77,7 +73,7 @@ public class StripeController
 												.setCurrency(payment.getCurrency()).setUnitAmount(payment.getAmount())
 												.setProductData(SessionCreateParams.LineItem.PriceData.ProductData
 														.builder().setName(payment.getName())
-														.addImage("https://m.media-amazon.com/images/I/615ekapl+pL._SL1500_.jpg")
+														.addImage("https://raw.githubusercontent.com/prafullspatil/e-commerce-angular-assignment/master/src/assets/image/img4.jpg")
 														.build())
 												.build())
 								.build())
@@ -97,8 +93,8 @@ public class StripeController
 		return gson.toJson(responseData);
 	}
 
-	@PostMapping("/webhook")
-	private ResponseEntity<?> extractEventFromSignature(HttpServletRequest request, String webhookSecret, PaymentDetails paymentDetails)
+	@PostMapping(WEBHOOK)
+	private ResponseEntity<?> extractEventFromSignature(HttpServletRequest request, PaymentDetails paymentDetails)
 	{
 		String sigHeader = request.getHeader("Stripe-Signature");
 		Event event = null;
@@ -106,7 +102,7 @@ public class StripeController
 		try
 		{
 			String payload = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
-			event = Webhook.constructEvent(payload, sigHeader, "whsec_d881ff823bc3b4ca956673470879e9db280aea7ba51ee78ae1234766298cfee1");
+			event = Webhook.constructEvent(payload, sigHeader, WEBHOOK_SECRET);
 		}
 		catch (Exception e)
 		{
@@ -149,7 +145,6 @@ public class StripeController
 		// }
 		// catch (JsonProcessingException e)
 		// {
-		// // TODO Auto-generated catch block
 		// e.printStackTrace();
 		// }
 
