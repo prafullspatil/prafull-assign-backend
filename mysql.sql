@@ -33,7 +33,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (11);
+INSERT INTO `hibernate_sequence` VALUES (15);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -65,13 +65,13 @@ INSERT INTO `images` VALUES (1,'https://m.media-amazon.com/images/I/615ekapl+pL.
 UNLOCK TABLES;
 
 --
--- Table structure for table `payment`
+-- Table structure for table `payments_details`
 --
 
-DROP TABLE IF EXISTS `payment`;
+DROP TABLE IF EXISTS `payments_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `payment` (
+CREATE TABLE `payments_details` (
   `id` bigint NOT NULL,
   `amount` bigint DEFAULT NULL,
   `currency` varchar(255) DEFAULT NULL,
@@ -87,13 +87,13 @@ CREATE TABLE `payment` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `payment`
+-- Dumping data for table `payments_details`
 --
 
-LOCK TABLES `payment` WRITE;
-/*!40000 ALTER TABLE `payment` DISABLE KEYS */;
-INSERT INTO `payment` VALUES (2,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAdqIRnpvLZ98h','Prafull Patil','pi_3LSIYLSJIMUNrwun1yZfRDGK','card','succeeded'),(3,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAeBjlp22RtZke','Prafull Patil','pi_3LSIsZSJIMUNrwun1oIFujN8','card','succeeded'),(4,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAfIJSJoy0VNqc','Prafull Patil','pi_3LSJx7SJIMUNrwun1AGoBkP8','card','succeeded'),(5,29900,'inr','IN','prafull.patil@mindbowser.com','cus_MAfKbEL3aGs160','Aman Patil','pi_3LSJzmSJIMUNrwun1obXY4Te','card','succeeded'),(6,29900,'inr','IN','prafullpatil0810@mindbowser.com','cus_MAfMcO4yphNxJJ','prafull patil','pi_3LSK1mSJIMUNrwun0gwC7j98','card','succeeded'),(7,59800,'inr','IN','prafullpatil0810@gmail.com','cus_MAfTjZnEgSec2b','Prafull Patil','pi_3LSK8USJIMUNrwun1msy7zmd','card','succeeded'),(8,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAffwQC0AHAzEG','Prafull Patil','pi_3LSKJgSJIMUNrwun14ZGGSOZ','card','succeeded'),(10,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAg43hd4gHbbwU','Prafull Patil','pi_3LSKiBSJIMUNrwun0lVl3m2R','card','succeeded');
-/*!40000 ALTER TABLE `payment` ENABLE KEYS */;
+LOCK TABLES `payments_details` WRITE;
+/*!40000 ALTER TABLE `payments_details` DISABLE KEYS */;
+INSERT INTO `payments_details` VALUES (12,29900,'inr','IN','prafullpatil0810@gmail.com','cus_MAhwbMxxxV1rEI','Prafull Patil','pi_3LSMWiSJIMUNrwun15pGsRcu','card','succeeded'),(13,299,'inr','IN','amanpatil@gmail.com','cus_MAiaFElzxThSTa','Aman Patil','pi_3LSN9DSJIMUNrwun0UNqVIQF','card','succeeded'),(14,299,'inr','IN','soma@gmail.com','cus_MAihblM605CJMq','Soma','pi_3LSNG2SJIMUNrwun1vV9xbzy','card','succeeded');
+/*!40000 ALTER TABLE `payments_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-02 19:57:35
+-- Dump completed on 2022-08-03  0:56:20
