@@ -29,6 +29,7 @@ public class ProductController
 	private ProductService productService;
 
 	@PostMapping(PRODUCT)
+	@CrossOrigin(origins = "http://localhost:4200")
 	public Product saveProduct(@RequestBody @Valid ProductDto productDto)
 	{
 		return productService.saveProduct(productDto);
